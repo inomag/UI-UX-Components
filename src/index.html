@@ -6,6 +6,7 @@
     <title>Visual Trends</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body1">
@@ -28,19 +29,22 @@
                         <div>Color:</div>
                     </div>
                     <div class="controls1">
-                        <div><input type="range" id="blur1" value="10" min="0.00" max="20" step="0.5"><span id="blur1val">10</span></div>
-                        <div><input type="range" id="trans1" value="0.50" min="0.00" max="1.00" step="0.05"><span id="trans1val">0.50</span></div>
-                        <div><input type="color" id="color1"></div>
+                        <div><input type="range" id="blur1" class="range1" value="10" min="0.00" max="20" step="0.5"><span id="blur1val">10</span></div>
+                        <div><input type="range" id="trans1" class="range1" value="0.50" min="0.00" max="1.00" step="0.05"><span id="trans1val">0.50</span></div>
+                        <div><input type="color" class="color" id="color1"></div>
                     </div>
                 </div>
             </div>
-            <div id="output1">
-                <p></p>
+            <div id="result1">
+                <div id="output1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt officia a quos odit voluptatum ipsam sunt adipisci? Fuga animi repudiandae quae aspernatur nemo voluptatem aut delectus deserunt mollitia distinctio.</p>
+                </div>
                 <img src="../assets/copy.svg" alt="" id="copy">
             </div>
+            
         </div>
     </section>
-    <footer>
+    <div id="footer1">
         <span id="social1">
             <a href="#">
                 <img src="../assets/code-w.svg" alt="Source Code">
@@ -50,10 +54,7 @@
             </a>
         </span>
         <img src="../assets/badge-w.svg">
-    </footer>
-
-
-
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
