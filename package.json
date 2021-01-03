@@ -4,8 +4,13 @@
   "description": "Collection of several UI/UX components & latest designing trends",
   "main": "index.js",
   "scripts": {
+    "start": "live-server --open=\"src/index.html\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pratik Gupta",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {}
 }
