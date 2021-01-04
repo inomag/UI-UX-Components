@@ -13,7 +13,8 @@ a{
     text-decoration: none;
 }
 #body1{
-    background: linear-gradient(180deg, #EF709B 0%, #FA9372 100%);
+    /* background: linear-gradient(180deg, #EF709B 0%, #FA9372 100%); */
+    background: #EF709B;
 }
 #header1{
     height: 12.79vh;
@@ -50,27 +51,28 @@ a{
 }
 
 #sec1{
+    margin-bottom: 30px;
     display: flex;
     flex-direction: row;
 }
 #example1{
-    margin: 15px 2.5vw;
+    margin: 15px 3.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #text{
-    font-size: calc(4.5rem + 1vw);
+    word-wrap: none;
+    font-size: calc(3.5rem + 1.5vw);
     font-weight: 800;
     color:white;
     position: absolute;
-    left: 160px;
+    top: calc(100px + 10vw);
+    left: calc(100px + (100vw - 500px) * 0.063);
 }
 #box1{
     width: calc(300px + 10vw);
     height: calc(300px + 10vw);
-    aspect-ratio: 1;
-    background: #FFFFFF;
     border-radius: 27px;
 }
 
@@ -198,21 +200,45 @@ a{
     right: 20px;
 }
 #footer1{
-    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position:fixed;
     bottom: 0px;
-    background-color: transparent !important;
 }
-/* #social1{
-    position: absolute;
-    right: 6vw;
+#social1{
+    background: #EF709B;
+    box-shadow:0 0 5px rgba(0,0,0,0.45);
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
-#social1 img{
-    width: 50px;
-    height: auto;
-    margin: auto 10px;
-} */
+#code,
+#git{
+    height: 30px;
+    width: auto;
+    margin: 0 12px;
+}
+#footer1 > img{
+    box-shadow:0 0 5px rgba(0,0,0,0.45);
+    bottom: 0;
+    height: 30px;
+    width: auto;
+}
+.glassMorph{
+    background: rgba( 255, 255, 255, 0.00 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.0px );
+    -webkit-backdrop-filter: blur( 10.0px );
+}
+@media screen and (max-width: 800px){
+    #sec1{
+        flex-direction: column;
+    }
+    #text{
+        top:calc(15px + 10vw);
+    }
+}
 
 /* FOR MEDIA QUERY CHANGE FLEX-DIRECTION OF SEC1 & SEC2 TO COLUMN*/
