@@ -171,7 +171,7 @@ a{
 .range1::-moz-focus-outer {
     border: 0;
 }
-.color{
+.color1{
     border: 1px white solid;
     width: 50px;
     height: 35px;
@@ -197,7 +197,7 @@ a{
     color: black;
     font-size: 2rem;
 }
-#copy{
+#copy1{
     cursor: pointer;
     width: 40px;
     height:40px;
@@ -250,6 +250,7 @@ a{
 /* FOR MEDIA QUERY CHANGE FLEX-DIRECTION OF SEC1 & SEC2 TO COLUMN*/
 
 #body2{
+    background-size: cover ;
     height: 100vh;
     background: linear-gradient(180deg, #A91CFF 0%, #40C9FF 100%);
 }
@@ -389,4 +390,65 @@ a{
 }
 .range2::-moz-focus-outer {
     border: 0;
+}
+.color2{
+    border: 1px black solid;
+    width: 50px;
+    height: 35px;
+}
+#result2{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+#output2{
+    width: 600px;
+    height:300px;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#output2 p{
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    font-size: 2rem;
+}
+#copy2{
+    cursor: pointer;
+    width: 40px;
+    height:40px;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+}
+#footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position:fixed;
+    bottom: 0px;
+}
+#social2{
+    background: #A91CFF;
+    box-shadow:0 0 5px rgba(0,0,0,0.45);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#code,
+#git{
+    height: 30px;
+    width: auto;
+    margin: 0 12px;
+}
+#footer2 > img{
+    box-shadow:0 0 5px rgba(0,0,0,0.45);
+    bottom: 0;
+    height: 30px;
+    width: auto;
 }
